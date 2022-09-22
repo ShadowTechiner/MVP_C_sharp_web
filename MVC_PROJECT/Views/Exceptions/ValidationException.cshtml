@@ -1,0 +1,10 @@
+﻿@model MVC_PROJECT.Models.Exceptions.ValidationException
+@{
+    ViewData["Title"] = "Validation Exception";
+    
+}
+
+<div class="main">
+    <p>@Model.Message</p>
+    <a asp-controller="Register" asp-action="Index">Try again</a>
+</div>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>@ViewData["Title"] - Diary Page</title>
+        <link rel="stylesheet" href="~/css/normalize.css"/>
+        <link rel="stylesheet" href="~/css/style.css"/>
+        <link rel="icon" type="image/x-icon" href="~/img/bookIcon.png" />
+    </head>
+    <body>
+        <header>
+            <a asp-action="Index" asp-controller="Home" class="introIcon">
+                <img src="~/img/book-xxl.png" alt="Book Icon" height="64"/>
+            </a>
+            <div class="introName">
+                Diary Page
+            </div>
+            <div class="registerEnterForm">
+                
+                <a asp-action="Index" asp-controller="Enter">Enter</a> 
+                | 
+                <a asp-action="Index" asp-controller="Register">Register</a>
+            </div>
+        </header>
+
+        <div class="container">
+            <nav>
+                <ul>
+                    <a asp-action="Index" asp-controller="Home">
+                        <li>
+                            Home Page
+                        </li>
+                    </a>
+                    <a asp-action="Index" asp-controller="DayQuote">
+                        <li>
+                            Quote of the Day
+                        </li>
+                    </a>
+                    <a asp-action="Index" asp-controller="Photos">
+                        <li>
+                            Photos
+                        </li>
+                    </a>
+                    <a asp-action="Index" asp-controller="DayBook">
+                        <li>
+                            Book of the Day
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="content">
+                @RenderBody()
+            </div>
+            <aside>
+                <section>
+                    <div class="header">Sport News</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium magnam minus ullam reprehenderit sint architecto vel tenetur asperiores accusamus. Cupiditate totam magnam laboriosam error vero nobis voluptates molestias maxime.</div>
+                </section>
+                <section>
+                    <div class="header">Beauty News</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium magnam minus ullam reprehenderit sint architecto vel tenetur asperiores accusamus. Cupiditate totam magnam laboriosam error vero nobis voluptates molestias maxime.</div>
+                </section>
+                <section>
+                    <div class="header">Animal News</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium magnam minus ullam reprehenderit sint architecto vel tenetur asperiores accusamus. Cupiditate totam magnam laboriosam error vero nobis voluptates molestias maxime.</div>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            &copy Diary Page by ShadowTechiner
+        </footer>
+    </body>
+</html>

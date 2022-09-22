@@ -1,0 +1,18 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="main">
+    <form asp-action="Register">
+        <div class="form group">
+            <p>Login: <input asp-for="Login" value="@Model?.Login"/></p>
+            <p>Password: <input asp-for="Password" /></p>
+            <p>
+                <input type="submit" value="Register"/>
+            </p>
+        </div>
+        
+    </form>
+</div>
+

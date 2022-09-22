@@ -1,0 +1,154 @@
+:root{
+    font-size: 20px;
+}
+
+html{
+    background-color: #A9A9A9;
+    margin: 0 auto;
+}
+
+body{
+    position: relative;
+}
+header{
+    position: relative;
+    background-color: #303134;
+    color: whitesmoke;
+    height: 3.5rem;
+}
+
+header .introIcon{
+    position: absolute;
+    left: 2rem;
+}
+
+header .introName{
+    position: absolute;
+    top: 0%;
+    left: 8rem;
+    font-size: 50px;
+    font-family: Ebrima, Helvetica, sans-serif;
+}
+
+header .registerEnterForm{
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+}
+
+header .registerEnterForm a:link{
+    text-decoration: none;
+}
+
+header .registerEnterForm a:visited{
+    color: white;
+}
+
+header .registerEnterForm a:hover{
+    color: wheat
+}
+
+.container{
+    margin: 0 10rem;
+    margin-top: 2rem;
+    position: relative;
+    background-color: rgba(255, 73, 132, 0.7);
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container > div {
+    margin: 15px;
+    margin-left: 1.5rem;
+}
+
+.container nav{
+    font-size: 18px;
+}
+
+.container nav ul{
+    margin: 0;
+    width: 7rem;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.container nav ul li{
+    margin: 5% auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid wheat;
+    display: block;
+}
+
+.container nav ul a:link{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container nav ul a:visited{
+    color: #303135;
+}
+
+.content{
+    padding: 5px 10px;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    text-align: left;
+    width: 200%;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5px 10px;
+    box-shadow: 0px 0px 20px -10px black;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.container aside{
+    position: relative;
+    box-sizing: border-box;
+}
+
+aside > section {
+    margin-left: 30px;
+}
+
+
+aside > section:last-child {
+    margin-bottom: 10px;
+}
+
+.container aside section{
+    margin-top: 10px;
+    padding: 0;
+    border: 2px solid wheat;
+    border-radius: 6px;
+}
+
+.container aside section .header{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid wheat;
+}
+
+.container aside section .body{
+    padding: 5px 10px;
+    text-align: left;
+}
+
+footer{
+    margin: 0 10rem;
+    padding-top: 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid whitesmoke;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+}

@@ -1,0 +1,18 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Enter";
+}
+
+<div class="main">
+    <form asp-action="Enter">
+        <div class="form group">
+            <p>Login: <input asp-for="Login"/></p>
+            <p>Password: <input asp-for="Password" /></p>
+            <p>
+                <input type="submit" value="Enter"/>
+            </p>
+        </div>
+        
+    </form>
+</div>
+
